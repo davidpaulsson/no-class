@@ -1,0 +1,6 @@
+{
+  "name": "no-class",
+  "dependencies": {
+    "sanitize-css": "~1.1.0"
+  }
+}

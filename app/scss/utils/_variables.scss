@@ -1,0 +1,37 @@
+/*--------------------------------------------------------------
+  Typography
+--------------------------------------------------------------*/
+
+$noclass-body-font-family    : 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif !default;
+$noclass-body-font-weight    : 300 !default;
+$noclass-heading-font-family : 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif !default;
+$noclass-heading-font-weight : 300 !default;
+
+$noclass-body-size           :  16 !default;
+$noclass-heading-size-1      :  36 !default;
+$noclass-heading-size-2      :  30 !default;
+$noclass-heading-size-3      :  24 !default;
+$noclass-heading-size-4      :  20 !default;
+$noclass-heading-size-5      :  16 !default;
+$noclass-heading-size-6      :  14 !default;
+
+$noclass-small-size          : 12 !default;
+
+/*--------------------------------------------------------------
+  Colors
+--------------------------------------------------------------*/
+
+$noclass-selection-background: #fe57a1 !default;
+$noclass-selection-text      : #fff !default;
+
+$noclass-code-background     : #f7f7f7 !default;
+
+$noclass-table-row-background: #f7f7f7 !default;
+
+$noclass-blockquote-border   : rgba(0,0,0,.1) !default;
+
+/*--------------------------------------------------------------
+  Misc
+--------------------------------------------------------------*/
+
+$noclass-radius              : 4px !default;

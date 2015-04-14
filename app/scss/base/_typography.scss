@@ -1,0 +1,148 @@
+/*--------------------------------------------------------------
+  Typography
+--------------------------------------------------------------*/
+
+html {
+  font-size: 62.5%;
+
+  font-kerning: normal;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: $noclass-body-font-family;
+  font-weight: $noclass-body-font-weight;
+  line-height: 1.4;
+  @include font-size($noclass-body-size);
+}
+
+/**
+ * Headings
+ */
+
+h1 {
+  font-weight: $noclass-heading-font-weight;
+  line-height: 1;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  @include font-size($noclass-heading-size-1);
+}
+
+h2 {
+  font-weight: $noclass-heading-font-weight;
+  line-height: 1;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  @include font-size($noclass-heading-size-2);
+}
+
+h3 {
+  font-weight: $noclass-heading-font-weight;
+  line-height: 1;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  @include font-size($noclass-heading-size-3);
+}
+
+h4 {
+  font-weight: $noclass-heading-font-weight;
+  line-height: 1;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  @include font-size($noclass-heading-size-4);
+}
+
+h5 {
+  font-weight: $noclass-heading-font-weight;
+  line-height: 1;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  @include font-size($noclass-heading-size-5);
+}
+
+h6 {
+  font-weight: $noclass-heading-font-weight;
+  line-height: 1;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  @include font-size($noclass-heading-size-6);
+}
+
+/**
+ * Misc
+ */
+
+p {
+  margin-bottom: 1em;
+}
+
+code {
+  font-family: Consolas, Monaco, 'Andale Mono', monospace;
+  font-size: 80%;
+  vertical-align: baseline;
+}
+pre {
+  code {
+    display: block;
+    padding: 0 1em;
+    border: 1px solid darken($noclass-code-background, 5%);
+    border-radius: $noclass-radius;
+    background-color: $noclass-code-background;
+  }
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -.5em;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+cite {
+  font-style: italic;
+}
+
+abbr,
+acronym {
+  cursor: help;
+  border-bottom: .1em dotted;
+}
+
+blockquote,
+q {
+  margin-bottom: 1em;
+  padding-left: 1em;
+  quotes: none;
+  border-left: 3px solid $noclass-blockquote-border;
+}
+
+/**
+ * Lists
+ */
+
+ol,
+ul {
+  margin-bottom: 1em;
+  padding-left: 1.5em;
+}
+
+
+/**
+ * Selected text
+ */
+
+::selection {
+  color: $noclass-selection-text;
+  background: $noclass-selection-background;
+  text-shadow: none;
+}

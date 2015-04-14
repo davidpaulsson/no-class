@@ -1,0 +1,18 @@
+/*--------------------------------------------------------------
+  Mixins
+--------------------------------------------------------------*/
+
+// REM font size
+@mixin font-size($sizeValue: 1.6) {
+  font-size: $sizeValue + px;
+  font-size: ($sizeValue / 10) + rem;
+}
+
+// Headings
+@function headings($from:1, $to:6) {
+  @if $from == $to {
+    @return 'h#{$from}';
+  } @else {
+    @return 'h#{$from},' + headings($from+1, $to);
+  }
+}

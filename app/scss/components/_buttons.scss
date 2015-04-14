@@ -1,0 +1,17 @@
+/*--------------------------------------------------------------
+  Buttons
+--------------------------------------------------------------*/
+
+button {
+  padding: .5em 1em;
+  border: 1px solid #e0e0e0;
+  border-radius: $noclass-radius;
+  background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%);
+  background-repeat: repeat-x;
+  text-shadow: 0 1px 0 #fff;
+  &:hover {
+    cursor: pointer;
+    background-color: #e0e0e0;
+    background-position: 0 -15px;
+  }
+}

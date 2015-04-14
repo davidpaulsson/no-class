@@ -1,0 +1,47 @@
+/*--------------------------------------------------------------
+  Tables
+--------------------------------------------------------------*/
+
+table {
+  width: 100%;
+}
+
+th,
+td {
+  padding: .25em;
+  text-align: left;
+  &:first-child {
+    padding-left: 0;
+  }
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
+tbody {
+  tr {
+    &:nth-of-type(odd){
+      background-color: $noclass-table-row-background;
+    }
+  }
+}
+
+/**
+ * Cell alignments
+ */
+
+[colspan] {
+  text-align: center;
+}
+
+[colspan='1'] {
+  text-align: left;
+}
+
+[rowspan] {
+  vertical-align: middle;
+}
+
+[rowspan='1'] {
+  vertical-align: top;
+}

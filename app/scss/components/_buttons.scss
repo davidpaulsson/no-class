@@ -2,16 +2,52 @@
   Buttons
 --------------------------------------------------------------*/
 
-button {
-  padding: .5em 1em;
-  border: 1px solid #e0e0e0;
+button,
+.button,
+.btn {
+  display: inline-block;
+  padding: .25em .55em;
+  border: 1px solid #d5d5d5;
   border-radius: $noclass-radius;
-  background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%);
-  background-repeat: repeat-x;
+  background-color: #eee;
+  background-image: linear-gradient(#fcfcfc, #eee);
+  background-repeat: no-repeat;
+  color: inherit;
+  text-decoration: none;
   text-shadow: 0 1px 0 #fff;
+  white-space: nowrap;
+  font-weight: bold;
+  line-height: 1.4;
+  cursor: pointer;
+
   &:hover {
-    cursor: pointer;
-    background-color: #e0e0e0;
-    background-position: 0 -15px;
+    border: 1px solid #ccc;
+    background-color: #ddd;
+    background-image: linear-gradient(#eee, #ddd);
+    color: inherit;
+    text-decoration: none;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $noclass-main;
+    text-decoration: none;
+  }
+
+  &:active {
+    border-color: #b5b5b5;
+    background-color: #dcdcdc;
+    background-image: none;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,.15);
+  }
+
+  &:disabled {
+    background-color: #efefef;
+    background-image: none;
+    color: #999;
+
+    &:hover {
+      cursor: not-allowed;
+    }
   }
 }

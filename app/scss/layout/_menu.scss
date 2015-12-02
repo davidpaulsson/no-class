@@ -1,0 +1,31 @@
+/*--------------------------------------------------------------
+  Menu
+--------------------------------------------------------------*/
+
+header {
+  ul {
+    padding-left: 0;
+    list-style-type: none;
+  }
+
+  li {
+    border-bottom: 1px solid $noclass-menu-underine;
+    text-align: center;
+
+    @media (min-width: 40em) {
+      display: inline-block;
+      border-bottom: none;
+      text-align: left;
+    }
+
+    a {
+      display: block;
+      padding: .5em 1em;
+      width: 100%;
+      border-bottom: none;
+      @media (min-width: 40em) {
+
+      }
+    }
+  }
+}

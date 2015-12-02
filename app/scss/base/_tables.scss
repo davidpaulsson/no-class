@@ -10,9 +10,11 @@ th,
 td {
   padding: .25em;
   text-align: left;
+
   &:first-child {
     padding-left: 0;
   }
+
   &:last-child {
     padding-right: 0;
   }

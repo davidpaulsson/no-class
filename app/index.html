@@ -1,43 +1,82 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>No Class</title>
-    <meta name="description" content="">
+    <meta name="description" content="A CSS Framework Without Class.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <title>No Class</title>
+
     <link rel="stylesheet" href="css/no-class.css">
-    <link rel="stylesheet" href="css/kitchen-sink.css">
   </head>
   <body>
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="container">
+    <main>
       <h1>No Class</h1>
-      <p>No Class is a small CSS framework indented to make you write HTML that looks good, cross-browser, without having to pull in a massive CSS library like <a href="http://getbootstrap.com/">Bootstrap</a> or <a href="http://foundation.zurb.com/">Foundation</a> and mock about with the custom markup and classes they bring. Don't get me wrong, they do a great job, but sometimes you just want to write plain HTML to <em>"strut your stuff"</em> without having it look like it was designed in 1999.</p>
+      <h2>A CSS Framework Without Class</h2>
+      <p>No Class is a small CSS framework indented to make you write HTML that looks good, cross-browser, without having to pull in a massive CSS library like <a href="http://getbootstrap.com/">Bootstrap</a> or <a href="http://foundation.zurb.com/">Foundation</a> and mock about with the custom markup and classes they bring. Don't get me wrong, they do a great job, but sometimes you just want to write plain HTML to “strut your stuff” without having it look like it was designed in 1999.</p>
+
+      <iframe src="https://ghbtns.com/github-btn.html?user=davidpaulsson&repo=no-class&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+
+      <iframe src="https://ghbtns.com/github-btn.html?user=davidpaulsson&repo=no-class&type=fork&count=true&size=large" frameborder="0" scrolling="0" width="158px" height="30px"></iframe>
 
       <hr>
 
-      <h1>Kitchen Sink</h1>
-
-      <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam iste maxime pariatur fugiat sapiente doloremque, nemo reiciendis delectus quam. Debitis tenetur aliquid corrupti, aperiam excepturi voluptate possimus placeat illo delectus.</p>
-
+      <h1>Header Level 1</h1>
       <h2>Header Level 2</h2>
+      <h3>Header Level 3</h3>
+      <h4>Header Level 4</h4>
+
+      <h2>Paragraphs</h2>
+
+      <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu <sup>libero sit</sup> amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum <sub>rutrum orci</sub>, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+
+      <h2>Lists</h2>
+
+      <h3>Ordered List</h3>
 
       <ol>
-        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-        <li>Aliquam tincidunt mauris eu risus.
+        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</li>
+        <li>Aliquam tincidunt mauris eu risus
           <ol>
-            <li>Lorem ipsum.</li>
-            <li>Enim, rem.</li>
+            <li>Lorem ipsum</li>
+            <li>Enim, rem</li>
           </ol>
         </li>
+        <li>Lorem ipsum dolor</li>
       </ol>
+
+      <h3>Unordered List</h3>
+
+      <ul>
+        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</li>
+        <li>Aliquam tincidunt mauris eu risus
+          <ul>
+            <li>Lorem ipsum</li>
+            <li>Eaque, adipisci</li>
+          </ul>
+        </li>
+        <li>Lorem ipsum dolor</li>
+      </ul>
+
+      <h3>Definition list</h3>
+
+      <h4>Menu</h4>
+      <p>If you wrap an <code>&lt;ul&gt;</code> inside a <code>&lt;header&gt;</code> element it'll turn into a common meny pattern. (Yup, it's responsive.)</p>
+      <header>
+        <ul>
+          <li><a href="javascript:;">Lorem</a></li>
+          <li><a href="javascript:;">Rem</a></li>
+          <li><a href="javascript:;">Aliquid</a></li>
+          <li><a href="javascript:;">Maxime</a></li>
+        </ul>
+      </header>
+
+      <h2>Blockquote</h2>
 
       <blockquote>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur vero, blanditiis suscipit mollitia ratione id, iusto sunt, corporis consequuntur impedit rem sapiente excepturi? Quam quos obcaecati sed voluptate in debitis delectus consectetur maiores aperiam doloremque beatae animi, facilis dolorum maxime.</p>
@@ -46,17 +85,7 @@
         </footer>
       </blockquote>
 
-      <h3>Header Level 3</h3>
-
-      <ul>
-        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-        <li>Aliquam tincidunt mauris eu risus.
-          <ul>
-            <li>Lorem ipsum.</li>
-            <li>Eaque, adipisci!</li>
-          </ul>
-        </li>
-      </ul>
+      <h2>Pre/Code</h2>
 
       <pre><code>
 #header h1 a {
@@ -66,7 +95,12 @@
 }
       </code></pre>
 
-      <h4>Header Level 4</h4>
+      <h2>Buttons</h2>
+
+      <button>I'm a button</button>
+      <button disabled>I'm a disabled button</button>
+
+      <h2>Table</h2>
 
       <table>
         <thead>
@@ -96,13 +130,59 @@
             <td>Cupiditate, dolor</td>
             <td>Officiis, nisi</td>
           </tr>
+          <tr>
+            <td>Lorem ipsum.</td>
+            <td>Enim, quaerat.</td>
+            <td>Iste, quam!</td>
+            <td>Assumenda, temporibus.</td>
+          </tr>
+          <tr>
+            <td>Lorem ipsum.</td>
+            <td>Illo, consequuntur.</td>
+            <td>Ipsum, natus.</td>
+            <td>Dolorem, modi.</td>
+          </tr>
+          <tr>
+            <td>Lorem ipsum.</td>
+            <td>Est, quasi!</td>
+            <td>Voluptatibus, mollitia.</td>
+            <td>Impedit, facilis?</td>
+          </tr>
+          <tr>
+            <td>Lorem ipsum.</td>
+            <td>Recusandae, nemo.</td>
+            <td>Ipsum, consequuntur.</td>
+            <td>Quasi, porro.</td>
+          </tr>
         </tbody>
       </table>
 
-      <h5>Header Level 5</h5>
+      <h2>Forms</h2>
 
-      <button>A button</button>
+      <form>
+        <fieldset>
+          <legend>Contact Us:</legend>
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div>
+            <label for="msg">Message:</label>
+            <textarea rows="5" name="msg" id="msg"></textarea>
+          </div>
 
-    </div>
+          <button type="submit">Submit</button>
+        </fieldset>
+      </form>
+
+      <hr>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, corporis odio eos, voluptas doloremque at soluta recusandae assumenda perspiciatis ratione pariatur! Cum iste odio illo dignissimos praesentium, fuga et accusamus!</p>
+
+    </main>
   </body>
 </html>

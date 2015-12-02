@@ -11,9 +11,10 @@ html {
 }
 
 body {
-  font-family: $noclass-body-font-family;
   font-weight: $noclass-body-font-weight;
-  line-height: 1.4;
+  font-family: $noclass-body-font-family;
+  line-height: 1.6;
+
   @include font-size($noclass-body-size);
 }
 
@@ -22,50 +23,56 @@ body {
  */
 
 h1 {
-  font-weight: $noclass-heading-font-weight;
-  line-height: 1;
   margin-top: 1em;
   margin-bottom: 1em;
+  font-weight: $noclass-heading-font-weight;
+  line-height: 1;
+
   @include font-size($noclass-heading-size-1);
 }
 
 h2 {
-  font-weight: $noclass-heading-font-weight;
-  line-height: 1;
   margin-top: 1em;
   margin-bottom: 1em;
+  font-weight: $noclass-heading-font-weight;
+  line-height: 1;
+
   @include font-size($noclass-heading-size-2);
 }
 
 h3 {
-  font-weight: $noclass-heading-font-weight;
-  line-height: 1;
   margin-top: 1em;
   margin-bottom: 1em;
+  font-weight: $noclass-heading-font-weight;
+  line-height: 1;
+
   @include font-size($noclass-heading-size-3);
 }
 
 h4 {
-  font-weight: $noclass-heading-font-weight;
-  line-height: 1;
   margin-top: 1em;
   margin-bottom: 1em;
+  font-weight: $noclass-heading-font-weight;
+  line-height: 1;
+
   @include font-size($noclass-heading-size-4);
 }
 
 h5 {
-  font-weight: $noclass-heading-font-weight;
-  line-height: 1;
   margin-top: 1em;
   margin-bottom: 1em;
+  font-weight: $noclass-heading-font-weight;
+  line-height: 1;
+
   @include font-size($noclass-heading-size-5);
 }
 
 h6 {
-  font-weight: $noclass-heading-font-weight;
-  line-height: 1;
   margin-top: 1em;
   margin-bottom: 1em;
+  font-weight: $noclass-heading-font-weight;
+  line-height: 1;
+
   @include font-size($noclass-heading-size-6);
 }
 
@@ -78,9 +85,9 @@ p {
 }
 
 code {
-  font-family: Consolas, Monaco, 'Andale Mono', monospace;
-  font-size: 80%;
   vertical-align: baseline;
+  font-size: 80%;
+  font-family: Consolas, Monaco, 'Andale Mono', monospace;
 }
 pre {
   code {
@@ -94,10 +101,10 @@ pre {
 
 sub,
 sup {
-  font-size: 75%;
-  line-height: 0;
   position: relative;
   vertical-align: baseline;
+  font-size: 75%;
+  line-height: 0;
 }
 
 sup {
@@ -114,16 +121,16 @@ cite {
 
 abbr,
 acronym {
-  cursor: help;
   border-bottom: .1em dotted;
+  cursor: help;
 }
 
 blockquote,
 q {
   margin-bottom: 1em;
   padding-left: 1em;
-  quotes: none;
   border-left: 3px solid $noclass-blockquote-border;
+  quotes: none;
 }
 
 /**
@@ -134,15 +141,32 @@ ol,
 ul {
   margin-bottom: 1em;
   padding-left: 1.5em;
+  ol,
+  ul {
+    margin-bottom: 0;
+  }
 }
 
+/**
+ * Links
+ */
+
+a {
+  border-bottom: 1px solid $noclass-main;
+  color: $noclass-main;
+  &:hover {
+    border-bottom: 0;
+    color: darken($noclass-main, 10%);
+    cursor: pointer;
+  }
+}
 
 /**
  * Selected text
  */
 
 ::selection {
-  color: $noclass-selection-text;
   background: $noclass-selection-background;
+  color: $noclass-selection-text;
   text-shadow: none;
 }

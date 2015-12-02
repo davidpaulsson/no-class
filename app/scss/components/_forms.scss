@@ -1,0 +1,52 @@
+/*--------------------------------------------------------------
+  Forms
+--------------------------------------------------------------*/
+
+/**
+ * Inputs
+ */
+
+fieldset {
+  margin: 0;
+  padding: 1em;
+  min-width: 0;
+  border: 1px solid $noclass-fieldset-border;
+  border-radius: $noclass-radius;
+
+  legend {
+    display: block;
+    padding: 0 .5em;
+    border: 0;
+    background-color: white;
+    font-weight: bold;
+    line-height: inherit;
+
+    @include font-size($noclass-body-size);
+  }
+}
+
+label {
+  display: inline-block;
+  display: block;
+  margin-bottom: 5px;
+  max-width: 100%;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  margin-bottom: 1em;
+  padding: .25em .5em;
+  width: 100%;
+  border: 1px solid $noclass-input-border;
+  border-radius: $noclass-radius;
+
+  &:hover {
+    border: 1px solid darken($noclass-input-border, 10%);
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid $noclass-main;
+  }
+}

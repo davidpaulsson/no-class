@@ -1,5 +1,3 @@
-'use strict';
-
 /* global require */
 
 var gulp = require('gulp');
@@ -44,3 +42,5 @@ gulp.task('default', ['html', 'sass', 'browser-sync'], function () {
   gulp.watch('app/scss/**/*.scss', ['sass']);
   gulp.watch('app/**/*.html', ['html']);
 });
+
+gulp.task('build', ['html', 'sass']);

@@ -14,14 +14,18 @@ header {
       display: inline-block;
       text-align: left;
       border-bottom: none;
+      &:first-child a {
+        padding-left: 0;
+      }
+      &:last-child a {
+        padding-right: 0;
+      }
     }
     a {
       display: block;
       width: 100%;
-      padding: 0.5em 1em;
+      padding: 0.25em 0.5em;
       border-bottom: none;
-      @media (min-width: 40em) {
-      }
     }
   }
 }

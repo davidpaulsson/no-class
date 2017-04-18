@@ -7,10 +7,10 @@
     "clean": "rm -rf dist/css",
     "sass": "node-sass src/scss/no-class.scss | node add-banner.js > dist/css/no-class.css",
     "autoprefixer": "postcss --no-map -u autoprefixer -r dist/css/*",
-    "clean:css": "cleancss --format beautify -o dist/css/no-class.css dist/css/no-class.css",
-    "minify:css": "cleancss -o dist/css/no-class.min.css dist/css/no-class.css",
-    "serve": "browser-sync start --server 'dist' --files 'dist/css/*.css'",
-    "watch": "onchange 'src/scss/*.scss' -- npm run sass",
+    "clean:css": "cleancss --format beautify -o dist/css/no-class.css node_modules/sanitize.css/sanitize.css dist/css/no-class.css",
+    "minify:css": "cleancss -o dist/css/no-class.min.css node_modules/sanitize.css/sanitize.css dist/css/no-class.css",
+    "serve": "browser-sync start --server 'dist' --files 'dist/css/*.css' 'dist/index.html'",
+    "watch": "onchange 'src/scss/**/*.scss' -- npm run build",
     "build": "npm run sass && npm run autoprefixer && npm run clean:css && npm run minify:css"
   },
   "repository": {

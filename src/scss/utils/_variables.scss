@@ -22,16 +22,12 @@ $noclass-small-size         : 12 !default;
 //--------------------------------------------------------------
 
 $noclass-main                : #3498db !default;
-
-$noclass-selection-background: #fe57a1 !default;
-$noclass-selection-text      : #fff !default;
-
-$noclass-code-background     : #f7f7f7 !default;
-
+$noclass-selection-background: rgba(0,0,0,.1) !default;
+$noclass-selection-text      : #000 !default;
+$noclass-code-background     : #f5f2f0 !default;
 $noclass-table-row-background: #f7f7f7 !default;
-
 $noclass-blockquote-border   : rgba(0,0,0,.1) !default;
-
+$noclass-hr                  : #ddd !default;
 $noclass-menu-underine       : #ddd !default;
 $noclass-fieldset-border     : #ddd !default;
 $noclass-input-border        : #ddd !default;

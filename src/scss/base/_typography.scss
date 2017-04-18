@@ -83,13 +83,17 @@ code {
   vertical-align: baseline;
 }
 pre {
-  code {
-    display: block;
-    padding: 0 1em;
-    border: 1px solid darken($noclass-code-background, 5%);
-    border-radius: $noclass-radius;
-    background-color: $noclass-code-background;
-  }
+  overflow: auto;
+  margin: 0.5em 0;
+  padding: 0 1em !important;
+  background: $noclass-code-background;
+  // code {
+  //   display: block;
+  //   padding: 0 1em;
+  //   border: 1px solid darken($noclass-code-background, 5%);
+  //   border-radius: $noclass-radius;
+  //   background-color: ;
+  // }
 }
 
 sub,
@@ -145,6 +149,7 @@ ul {
  */
 
 a {
+  text-decoration: none;
   color: $noclass-main;
   border-bottom: 1px solid $noclass-main;
   &:hover {

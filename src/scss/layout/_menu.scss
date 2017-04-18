@@ -7,24 +7,20 @@ header {
     padding-left: 0;
     list-style-type: none;
   }
-
   li {
-    border-bottom: 1px solid $noclass-menu-underine;
     text-align: center;
-
+    border-bottom: 1px solid $noclass-menu-underine;
     @media (min-width: 40em) {
       display: inline-block;
-      border-bottom: none;
       text-align: left;
+      border-bottom: none;
     }
-
     a {
       display: block;
-      padding: .5em 1em;
       width: 100%;
+      padding: 0.5em 1em;
       border-bottom: none;
       @media (min-width: 40em) {
-
       }
     }
   }

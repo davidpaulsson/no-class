@@ -8,13 +8,11 @@ table {
 
 th,
 td {
-  padding: .25em;
+  padding: 0.25em;
   text-align: left;
-
   &:first-child {
     padding-left: 0;
   }
-
   &:last-child {
     padding-right: 0;
   }
@@ -22,7 +20,7 @@ td {
 
 tbody {
   tr {
-    &:nth-of-type(odd){
+    &:nth-of-type(odd) {
       background-color: $noclass-table-row-background;
     }
   }

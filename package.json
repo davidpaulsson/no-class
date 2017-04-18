@@ -1,18 +1,37 @@
 {
-  "name": "no-class",
-  "version": "0.0.1",
+  "name": "no-class.css",
+  "version": "1.0.0",
   "description": "A no class CSS framework.",
-  "main": "gulpfile.js",
-  "devDependencies": {
-    "browser-sync": "^2.6.0",
-    "gulp": "^3.8.11",
-    "gulp-autoprefixer": "3.1.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "2.1.0"
-  },
+  "main": "dist/css/no-class.css",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rm -rf dist/css",
+    "sass": "node-sass src/scss/no-class.scss | node add-banner.js > dist/css/no-class.css",
+    "autoprefixer": "postcss --no-map -u autoprefixer -r dist/css/*",
+    "clean:css": "cleancss --format beautify -o dist/css/no-class.css dist/css/no-class.css",
+    "minify:css": "cleancss -o dist/css/no-class.min.css dist/css/no-class.css",
+    "serve": "browser-sync start --server 'dist' --files 'dist/css/*.css'",
+    "watch": "onchange 'src/scss/*.scss' -- npm run sass",
+    "build": "npm run sass && npm run autoprefixer && npm run clean:css && npm run minify:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidpaulsson/no-class.git"
   },
   "author": "David Paulsson <david@davidpaulsson.se>",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davidpaulsson/no-class/issues"
+  },
+  "homepage": "https://github.com/davidpaulsson/no-class",
+  "dependencies": {
+    "sanitize.css": "^5.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.7.7",
+    "browser-sync": "^2.18.8",
+    "clean-css-cli": "^4.0.12",
+    "node-sass": "^4.5.2",
+    "onchange": "^3.2.1",
+    "postcss-cli": "^3.1.1"
+  }
 }

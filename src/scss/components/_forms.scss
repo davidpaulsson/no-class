@@ -7,46 +7,42 @@
  */
 
 fieldset {
+  min-width: 0;
   margin: 0;
   padding: 1em;
-  min-width: 0;
   border: 1px solid $noclass-fieldset-border;
   border-radius: $noclass-radius;
-
   legend {
-    display: block;
-    padding: 0 .5em;
-    border: 0;
-    background-color: white;
     font-weight: bold;
     line-height: inherit;
-
+    display: block;
+    padding: 0 0.5em;
+    border: 0;
+    background-color: white;
     @include font-size($noclass-body-size);
   }
 }
 
 label {
+  font-weight: bold;
   display: inline-block;
   display: block;
-  margin-bottom: 5px;
   max-width: 100%;
-  font-weight: bold;
+  margin-bottom: 5px;
 }
 
 input,
 textarea {
-  margin-bottom: 1em;
-  padding: .25em .5em;
   width: 100%;
+  margin-bottom: 1em;
+  padding: 0.25em 0.5em;
   border: 1px solid $noclass-input-border;
   border-radius: $noclass-radius;
-
   &:hover {
     border: 1px solid darken($noclass-input-border, 10%);
   }
-
   &:focus {
-    outline: none;
     border: 1px solid $noclass-main;
+    outline: none;
   }
 }

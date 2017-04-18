@@ -5,47 +5,42 @@
 button,
 .button,
 .btn {
+  font-weight: bold;
+  line-height: 1.4;
   display: inline-block;
-  padding: .25em .55em;
+  padding: 0.25em 0.55em;
+  cursor: pointer;
+  white-space: nowrap;
+  text-decoration: none;
+  color: inherit;
   border: 1px solid #d5d5d5;
   border-radius: $noclass-radius;
   background-color: #eee;
   background-image: linear-gradient(#fcfcfc, #eee);
   background-repeat: no-repeat;
-  color: inherit;
-  text-decoration: none;
   text-shadow: 0 1px 0 #fff;
-  white-space: nowrap;
-  font-weight: bold;
-  line-height: 1.4;
-  cursor: pointer;
-
   &:hover {
+    text-decoration: none;
+    color: inherit;
     border: 1px solid #ccc;
     background-color: #ddd;
     background-image: linear-gradient(#eee, #ddd);
-    color: inherit;
-    text-decoration: none;
   }
-
   &:focus {
-    outline: none;
-    border-color: $noclass-main;
     text-decoration: none;
+    border-color: $noclass-main;
+    outline: none;
   }
-
   &:active {
     border-color: #b5b5b5;
     background-color: #dcdcdc;
     background-image: none;
-    box-shadow: inset 0 2px 4px rgba(0,0,0,.15);
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.15);
   }
-
   &:disabled {
+    color: #999;
     background-color: #efefef;
     background-image: none;
-    color: #999;
-
     &:hover {
       cursor: not-allowed;
     }

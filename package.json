@@ -8,7 +8,7 @@
     "sass": "node-sass src/scss/no-class.scss | node add-banner.js > docs/css/no-class.css",
     "autoprefixer": "postcss --no-map -u autoprefixer -r docs/css/*",
     "clean:css": "cleancss --format beautify -o docs/css/no-class.css node_modules/sanitize.css/sanitize.css docs/css/no-class.css",
-    "minify:css": "cleancss -o docs/css/no-class.min.css node_modules/sanitize.css/sanitize.css docs/css/no-class.css",
+    "minify:css": "cleancss -o docs/css/no-class.min.css docs/css/no-class.css",
     "serve": "browser-sync start --server 'docs' --files 'docs/css/*.css' 'docs/index.html'",
     "watch": "onchange 'src/scss/**/*.scss' -- npm run build",
     "build": "npm run sass && npm run autoprefixer && npm run clean:css && npm run minify:css"
